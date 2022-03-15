@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="1website_style.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+</script>
+</head>
+<body>
+
+<div id="header">
+ <li id="site_name">1website.com</li>
+ <li onclick="scrollto('home');">HOME</li>
+ <li onclick="scrollto('about');">ABOUT</li>
+ <li onclick="scrollto('contact');">CONTACT</li>
+</div>
+
+<div id="home">
+ <h1>Demo Of One Page Website Template Using HTML, CSS And jQuery<p>1website.com</p></h1>
+ <p> this page was created by sherine shiny of 3rd year cse </p>
+</div>
+<div id="about">
+ <p>this page was created by html and css.</p>
+ <p>my name is sherine shiny.</p>
+ <p>i am a computer engineering student in university college of engineering kanchipuram </p>
+</div>
+
+<div id="contact">
+<h1>If you have any question or query you can contact us at <br>sherineshiny2001@gmail.com </h1>
+</div>
+
+</body>
+</html>
